@@ -1,0 +1,125 @@
+*{
+    font-family: 'Sriracha', cursive;
+}
+.logo{
+    position: absolute;
+    width: 90px;
+    margin-top: -15px;
+    padding: 10px;
+}
+.img{
+    width: 100%;
+    margin-bottom: -10px;
+}
+.img img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #005baa;
+}
+nav ul{
+    display: flex;
+    
+}
+nav ul li .first{
+    margin: 10px 20px 0px -10px;
+    margin-left: 130px;
+    color:#fff;
+    font-size: 15px;
+    font-weight:500;
+    padding: 16px;
+}
+.first:hover{
+    color: #005baa;
+    background-color:#ffffff;
+    padding: 16px;
+    transition:all ease 0.2s;
+}
+nav ul li .button-nav{
+    margin: 10px 20px 0px -10px;
+    color:#fff;
+    font-size: 15px;
+    font-weight:500;
+    padding: 16px;
+}
+.button-nav:hover{
+    color: #005baa;
+    background-color:#ffffff;
+    padding: 16px;
+    transition:all ease 0.2s;
+}
+.socialh a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:60px;
+    margin:0px;
+    padding: 0px;
+    line-height:0px;
+    background-color:#005baa;
+}
+.socialh a:hover{
+    background-color:#ffffff;
+    transition:all ease 0.5s;
+}
+.socialh i{
+    font-size:20px;
+    color: #009bdb;
+}
+/*--------------dropdwn---------------------*/
+.dropbtn{
+    margin: -16px;
+    background-color: #ffffff00;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    font-weight:500;
+    border: none;
+    cursor: pointer;
+}
+.dropdown:hover .dropbtn{
+    color: #005baa;
+    background-color:#ffffff;
+    padding: 16px;
+    transition:all ease 0.2s;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    margin-left: -16px;
+    margin-top: 17px;
+}
+.dropdown-content a{
+    color: #005baa;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #009bdb;
+    color: #ffffff;
+    font-weight: 500;
+}

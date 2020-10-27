@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+/*----------------popup-login-----------------------*/
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.button{
+    background: #eaeaea;
+    padding: 10px 20px;
+    color: #005baa;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 29px -40px rgba(0,0,0,0.75);
+    margin-top: 25px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.button:hover{
+    background: #005baa;
+    color: #eaeaea;
+}
+.popup{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+}
+.popup-content{
+    height: 380px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.popup-content .button-login{
+    background: #fff;
+    padding: 10px 20px;
+    color: #005baa;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-right: 127px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.popup-content .button-login:hover{
+    background: #005baa;
+    color: #fff;
+}
+.popup-content .button{
+    background: #fff;
+    padding: 10px 20px;
+    color: #005baa;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.popup-content .button:hover{
+    background: #005baa;
+    color: #fff;
+}
+.profile-icon{
+    width: 60px;
+}
+input{
+    margin: 20px auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid  #eeeeee;
+    border-radius: 5px;
+}
+.close{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 28px;
+    height: 28px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+/*--------------footer---------------*/
+footer .p1{
+    text-align: center;
+    width: 400px;
+    font-size: 22px;
+    font-weight:bold;
+    color:#ffffff;
+    line-height:5px;
+}
+footer .p2{
+    font-size: 14px;
+    color:#ffffff;
+    width:800px;
+    text-align: center;
+}
+footer{
+    display: flex;
+    margin-top: 42.5%;
+    
+    height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #005baa00;
+}
+.social-icons a{
+    width:35px;
+    height:35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffffff;
+    margin:5px 10px;
+    border-radius:50%;
+}
+.social-icons{
+    display: flex; 
+}
+.social-icons i,.social i{
+    color:#000000;
+    width:20px;
+    height:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons a:hover{
+    background-color:#000000;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+    transition:all ease 0.5s;
+}
+.social-icons a:hover i, .social a:hover i{
+    color:#FFFFFF;
+    transition:all ease 0.5s;
+}
+.copyright{
+    color:#ffffff;
+    font-size: 13px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    position: fixed;
+    top:50%;
+    right:0px;
+    transform:translateY(-50%);
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50px;
+    height:50px;
+    margin:0px;
+    padding: 0px;
+    line-height:0px;
+    background-color:#FFFFFF;
+    border: 1px solid #e4e3e3;
+    border-radius: 1px;
+    box-shadow:2px 2px 12px rgba(0,0,0,0.2);
+}
+.social a:hover{
+    background-color:#000000;
+    transition:all ease 0.5s;
+}
+.social i{
+    font-size:20px;
+    color:#2B2B2B;
+}
