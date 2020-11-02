@@ -204,9 +204,7 @@ class Alumni extends CI_Controller {
 	}
 	public function View_editprofile()
 	{
-		$Std_ID =  $this->session->userdata('Std_ID');
-		$result['MA'] = $this->MA->Profile($Std_ID);
-		$this->load->view('View_editProfile',$result);
+		$this->load->view('View_editProfile');
 	}
 
 	public function edit_Profile()
@@ -224,6 +222,7 @@ class Alumni extends CI_Controller {
 
 		$data1 = array(
 			'Std_ID' => $this->input->post("Std_ID"),
+			'Name_LastName' => $this->input->post("Name_LastName"),
 			'End_Year'=> $this->input->post("End_Year"),
 		);
 
@@ -235,10 +234,12 @@ class Alumni extends CI_Controller {
 			'Rank'=> $this->input->post("Rank"),
 			'Company_Tel'=> $this->input->post("Company_Tel"),
 		);
+
 			$this->MA->Update_Register($data);
 			$this->MA->Update_Educational($data1);
 			$this->MA->Update_Work($data2);
-			$result['MA'] = $this->MA->Profile($Std_ID);
+			$Std_ID =  $this->session->userdata('Std_ID');
+			$result1['MA'] = $this->MA->Profile($Std_ID);
 			$this->load->view('profile', $result1);
 		
 	}
