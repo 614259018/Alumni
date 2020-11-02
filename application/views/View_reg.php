@@ -60,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <label for="textarea2"></label>
             <textarea name="Address"  cols="45" rows="5"></textarea>
           </div>
-        </p><br><br><br><br><br><br><br>
+        </p><br><br><br><br><br><br><br><br>
         <p>
           เบอร์โทรศัพท์ 
           <div class="input">
